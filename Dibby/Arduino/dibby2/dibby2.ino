@@ -107,7 +107,7 @@ void publishDB(float db) //client function to send/receive GET request data.
   if (client.connect(servername, 8080)) {  //starts client connection, checks for connection
  
 
-  String part1 = "GET /Dibby/api/verify?arg1=" ;
+  String part1 = "GET /Dibby/api/verify?db=" ;
   String part2 =  String(db, 3);  ;
  
  

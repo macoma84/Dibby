@@ -39,27 +39,15 @@ public class DibbyRestService {
 	}
 	
 	
-	
-	@POST
-	@Path("/dibbyDB")
-	@Consumes(MediaType.APPLICATION_JSON)
-	public Response dibbyRESTDB(String param1) { 
-	 
-		System.out.println("Data Received: " + param1);
-		String result = "OK";
- 
-		// return HTTP response 200 in case of success
-		return Response.status(200).entity(result).build();
-	}
  
 	@GET
 	@Path("/verify")
 	@Produces(MediaType.TEXT_PLAIN)
-	public Response verifyRESTService(@QueryParam("db")  @DefaultValue("") String db ,@QueryParam("hz")  @DefaultValue("") String hz ,@QueryParam("env")  @DefaultValue("") String env ) {
+	public Response verifyRESTService(@QueryParam("db")  @DefaultValue("") String db ) {
 		
 		Date date = new Date();
 		
-		System.out.println("Data Received|" + db + "|" + hz +"|"+ env + "|" + date.getTime());
+		System.out.println("Data Received|" + db +"|"+ date.getTime());
 		
 		
 		String result = "OK";
