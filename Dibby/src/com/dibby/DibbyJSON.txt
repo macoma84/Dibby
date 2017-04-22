@@ -1,0 +1,7 @@
+{
+    "dibby": {
+        "id": "Dibby",
+        "topic": "REST Service",
+        "description": "This is REST Service Example by Dibby."
+    }
+}
